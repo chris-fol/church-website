@@ -1,6 +1,6 @@
 /**
- * GRACE COMMUNITY CHURCH - Main JavaScript
- * Handles mobile navigation, dynamic content, event filters, and form interactions
+ * TRADITIONAL CHURCH WEBSITE - Main JavaScript
+ * Handles mobile navigation, tab switching, and template form interactions
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -38,32 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Event Category Filtering (on events.html)
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const eventCards = document.querySelectorAll('.event-card');
-
-  if (filterButtons.length > 0 && eventCards.length > 0) {
-    filterButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        // Toggle active class on buttons
-        filterButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        const selectedCategory = btn.getAttribute('data-filter');
-
-        eventCards.forEach(card => {
-          const cardCategory = card.getAttribute('data-category');
-          if (selectedCategory === 'all' || cardCategory === selectedCategory) {
-            card.style.display = 'flex';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
-    });
-  }
-
-  // 4. Contact & Prayer Tabs (on contact.html)
+  // 3. Contact & Prayer Tabs (on contact.html)
   const tabButtons = document.querySelectorAll('.form-tab-btn');
   const tabPanels = document.querySelectorAll('.form-panel');
 
@@ -105,14 +80,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const subjectParam = urlParams.get('subject');
     const messageField = document.getElementById('contact-message');
     if (subjectParam && messageField) {
-      messageField.value = `Regarding event: ${subjectParam}\n`;
+      messageField.value = `Regarding: ${subjectParam}\n`;
     }
   }
 
-  // 5. Prayer Request & Contact Form Submissions (Demo handling)
-  // NOTE: On GitHub Pages (static hosting), to receive real emails you can
-  // connect these forms to a free service like Formspree (formspree.io),
-  // Web3Forms (web3forms.com), or Google Forms.
+  // 4. Form Submissions (Demo template behavior)
   const forms = document.querySelectorAll('form[data-interactive="true"]');
   forms.forEach(form => {
     form.addEventListener('submit', (e) => {
@@ -126,15 +98,14 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.textContent = 'Sending...';
       }
 
-      // Simulate a small delay for realistic feedback
       setTimeout(() => {
         if (statusBox) {
           statusBox.style.display = 'block';
           statusBox.className = 'form-status success';
           if (form.id === 'prayer-form') {
-            statusBox.innerHTML = '<strong>Prayer request received.</strong> Our prayer team has received your request and will be lifting you up in prayer. God bless you!';
+            statusBox.innerHTML = '<strong>Prayer request received.</strong> [Template note: In the live version, this message will be emailed to your church office or prayer team].';
           } else {
-            statusBox.innerHTML = '<strong>Message sent successfully!</strong> Thank you for reaching out. We will get back to you shortly.';
+            statusBox.innerHTML = '<strong>Message sent!</strong> [Template note: In the live version, this message will be emailed to your pastor or office].';
           }
         }
         form.reset();
@@ -142,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
           submitBtn.disabled = false;
           submitBtn.textContent = submitBtn.getAttribute('data-default-text') || 'Submit';
         }
-      }, 700);
+      }, 500);
     });
   });
 });
