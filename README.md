@@ -4,7 +4,7 @@ A simple, traditional, and mobile-friendly website template designed specificall
 
 ---
 
-## 🌟 Template Overview & Design Philosophy
+## Template Overview & Design Philosophy
 
 This website is built with a **low-maintenance philosophy**:
 - **Zero build steps**: Pure, standard HTML5, CSS3, and lightweight vanilla JavaScript. No Node.js, Ruby, Jekyll, or complex dependencies to break.
@@ -15,7 +15,7 @@ This website is built with a **low-maintenance philosophy**:
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```text
 church-website/
@@ -35,7 +35,7 @@ church-website/
 
 ---
 
-## ❓ Frequently Asked Questions
+## Frequently Asked Questions
 
 ### What happens when I push to `main`? Does the live site update automatically?
 **Yes!** 
@@ -45,14 +45,14 @@ Whenever you push new commits to the `main` branch (or merge a Pull Request into
 - *Tip:* If you just pushed changes and don't see them right away in your browser, perform a hard refresh (`Ctrl + F5` on Windows/Linux or `Cmd + Shift + R` on Mac) to bypass your browser's local cache.
 
 ### Is pushing to feature branches and opening PRs a good habit?
-**Absolutely.** Creating a feature branch (e.g. `git checkout -b update-service-times`), pushing it, and creating a Pull Request (PR) to merge into `main` is the industry gold standard:
+**Definitely.** Creating a feature branch (e.g. `git checkout -b update-service-times`), pushing it, and creating a Pull Request (PR) to merge into `main` is the industry gold standard:
 1. It prevents accidental broken edits on the live site.
 2. It allows you to review the exact diff before it goes live.
 3. Once the PR is merged into `main`, GitHub Pages automatically publishes the changes!
 
 ---
 
-## 🚀 How to Host on GitHub Pages (Free)
+## How to Host on GitHub Pages (Free)
 
 1. **Commit and push** your files to GitHub:
    ```bash
@@ -71,7 +71,7 @@ Whenever you push new commits to the `main` branch (or merge a Pull Request into
 
 ---
 
-## ✏️ Customization Checklist
+## Customization Checklist
 
 Search and replace the bracketed `[...]` placeholders across the HTML files:
 
@@ -99,7 +99,7 @@ Search and replace the bracketed `[...]` placeholders across the HTML files:
 
 ---
 
-## 💻 Local Preview
+## Local Preview
 
 To preview the website locally before pushing changes:
 ```bash
