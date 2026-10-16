@@ -3,41 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Grace Community Church or submit a confidential prayer request. We are here to pray with you and answer any questions.">
-  <title>Contact Us &amp; Prayer Requests | Grace Community Church</title>
+  <meta name="description" content="Contact [Your Church Name] or submit a prayer request.">
+  <title>Contact &amp; Prayer Requests | [Your Church Name]</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Top Announcement Bar -->
-  <aside class="top-banner" aria-label="Quick announcements">
+  <aside class="top-banner" aria-label="Quick church information">
     <div class="container">
       <div class="banner-item">
         <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        <span>123 Faith Way, Springfield, ST 12345</span>
+        <span>[123 Church Road, Your Town, ST 12345]</span>
       </div>
       <div class="banner-links">
-        <a href="contact.html#prayer">Need Prayer?</a>
-        <a href="events.html">Upcoming Events</a>
-        <a href="tel:5551234567">(555) 123-4567</a>
+        <a href="https://www.facebook.com/[YourChurchPage]/videos" target="_blank" rel="noopener">Sermons on Facebook ↗</a>
+        <a href="contact.html#prayer">Prayer Requests</a>
+        <a href="tel:5550000000">[(555) 000-0000]</a>
       </div>
     </div>
   </aside>
 
-  <!-- Navigation Header -->
+  <!-- Navigation Header (Clean, single navigation without duplicate buttons) -->
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="brand-logo" aria-label="Grace Community Church Home">
+      <a href="index.html" class="brand-logo" aria-label="[Your Church Name] Home">
         <div class="logo-icon">
           <svg viewBox="0 0 24 24"><path d="M12 2v20M6 8h12"/></svg>
         </div>
         <div class="brand-text">
-          <span class="brand-name">Grace Community</span>
-          <span class="brand-tagline">Church</span>
+          <span class="brand-name">[Your Church Name]</span>
+          <span class="brand-tagline">[A Friendly Country Church / Tagline]</span>
         </div>
       </a>
 
@@ -45,18 +42,20 @@
         <ul class="nav-menu">
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="about.html" class="nav-link">About &amp; Beliefs</a></li>
-          <li><a href="events.html" class="nav-link">Events &amp; Calendar</a></li>
+          <li>
+            <a href="https://www.facebook.com/[YourChurchPage]/videos" target="_blank" rel="noopener" class="nav-link nav-link-external" title="Opens church Facebook videos page in a new tab">
+              Sermons
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </li>
+          <li><a href="events.html" class="nav-link">Events &amp; Schedule</a></li>
           <li><a href="contact.html" class="nav-link active">Contact &amp; Prayer</a></li>
-          <li class="mobile-cta"><a href="contact.html#visit" class="btn btn-primary btn-sm">Plan Your Visit</a></li>
         </ul>
       </nav>
 
-      <div class="nav-actions">
-        <a href="contact.html#visit" class="btn btn-primary btn-sm">Plan Your Visit</a>
-        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-        </button>
-      </div>
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
     </div>
   </header>
 
@@ -65,7 +64,7 @@
     <section class="page-header">
       <div class="container">
         <h1>Contact &amp; Prayer Requests</h1>
-        <p>We would love to hear from you, answer your questions, or stand with you in prayer.</p>
+        <p>Get in touch with our pastor, ask a question, or let us know how we can pray for you.</p>
       </div>
     </section>
 
@@ -82,71 +81,66 @@
                 🙏 Prayer Request
               </button>
               <button class="form-tab-btn" data-tab="tab-contact" role="tab" aria-selected="false" id="tab-contact-btn">
-                ✉️ General Contact / Plan a Visit
+                ✉️ General Contact / Note
               </button>
             </div>
 
             <!-- TAB 1: PRAYER REQUEST FORM -->
             <div class="form-panel" id="tab-prayer" role="tabpanel" aria-labelledby="tab-prayer-btn">
-              <div style="margin-bottom: 1.5rem;">
-                <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">How Can We Pray For You?</h2>
+              <div style="margin-bottom: 1.25rem;">
+                <h2 style="font-size: 1.35rem; margin-bottom: 0.35rem;">How Can We Pray For You?</h2>
                 <p style="color: var(--color-text-muted); font-size: 0.95rem;">
-                  "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God." — Philippians 4:6
+                  "The prayer of a righteous person is powerful and effective." &ndash; James 5:16
                 </p>
               </div>
 
               <!-- Form Status Alert Box -->
               <div class="form-status" role="alert"></div>
 
-              <!--
-                TIP: For GitHub Pages static hosting, replace action="#" with your free Formspree,
-                Web3Forms, or Netlify forms endpoint to receive submissions directly in your church inbox.
-              -->
               <form id="prayer-form" data-interactive="true">
                 <div class="form-group">
-                  <label for="prayer-name">Your Name <span style="font-weight: 400; color: var(--color-text-light);">(Optional — Leave blank for anonymous)</span></label>
-                  <input type="text" id="prayer-name" name="name" class="form-control" placeholder="Jane Doe or leave blank">
+                  <label for="prayer-name">Your Name <span style="font-weight: 400; color: var(--color-text-light);">(Optional &ndash; leave blank to remain anonymous)</span></label>
+                  <input type="text" id="prayer-name" name="name" class="form-control" placeholder="e.g. John Doe or leave blank">
                 </div>
 
                 <div class="form-group">
-                  <label for="prayer-email">Email or Phone Number <span style="font-weight: 400; color: var(--color-text-light);">(Optional — if you'd like us to reach out)</span></label>
-                  <input type="text" id="prayer-email" name="contact_info" class="form-control" placeholder="you@example.com or (555) 000-0000">
+                  <label for="prayer-contact">Email or Phone Number <span style="font-weight: 400; color: var(--color-text-light);">(Optional &ndash; if you'd like a call or note)</span></label>
+                  <input type="text" id="prayer-contact" name="contact_info" class="form-control" placeholder="[(555) 000-0000 or email]">
                 </div>
 
                 <div class="form-group">
-                  <label for="prayer-confidentiality">Sharing Preference *</label>
-                  <select id="prayer-confidentiality" name="confidentiality" class="form-control" required>
-                    <option value="staff-only">Confidential — Pastoral Staff &amp; Elders Only</option>
-                    <option value="prayer-chain">Church Prayer Chain (Shared with trusted prayer team)</option>
-                    <option value="public-praise">Public Praise / Answer to Prayer</option>
+                  <label for="prayer-privacy">Sharing Preference *</label>
+                  <select id="prayer-privacy" name="privacy" class="form-control" required>
+                    <option value="pastor-only">Confidential &ndash; Pastor &amp; Elders Only</option>
+                    <option value="prayer-list">Church Prayer List (Shared during Wednesday prayer meeting)</option>
                   </select>
                 </div>
 
                 <div class="form-group">
-                  <label for="prayer-text">Your Prayer Request *</label>
-                  <textarea id="prayer-text" name="prayer_request" class="form-control" rows="5" placeholder="Share as much or as little detail as you feel comfortable sharing..." required></textarea>
+                  <label for="prayer-request">Prayer Request *</label>
+                  <textarea id="prayer-request" name="prayer_request" class="form-control" rows="5" placeholder="Share your request here..." required></textarea>
                 </div>
 
                 <div class="form-group" style="display: flex; align-items: center; gap: 0.5rem;">
-                  <input type="checkbox" id="prayer-followup" name="followup" value="yes" style="width: 18px; height: 18px; accent-color: var(--color-accent);">
-                  <label for="prayer-followup" style="margin-bottom: 0; font-weight: 500; font-size: 0.9rem;">
-                    I would like a pastor to call or email me to pray together.
+                  <input type="checkbox" id="prayer-call" name="followup" value="yes" style="width: 17px; height: 17px; accent-color: var(--color-primary);">
+                  <label for="prayer-call" style="margin-bottom: 0; font-weight: normal; font-size: 0.9rem;">
+                    I would appreciate a phone call or visit from the pastor.
                   </label>
                 </div>
 
-                <button type="submit" class="btn btn-primary" style="width: 100%;" data-default-text="Send Prayer Request">
-                  Send Prayer Request
+                <button type="submit" class="btn btn-primary" style="width: 100%;" data-default-text="Submit Prayer Request">
+                  Submit Prayer Request
                 </button>
-                <p class="form-note text-center">Your privacy is deeply sacred to us. We will treat every request with reverence and respect.</p>
+                <p class="form-note text-center">Requests marked confidential will be seen strictly by pastoral leadership.</p>
               </form>
             </div>
 
-            <!-- TAB 2: GENERAL CONTACT & VISIT FORM -->
+            <!-- TAB 2: GENERAL CONTACT FORM -->
             <div class="form-panel" id="tab-contact" role="tabpanel" aria-labelledby="tab-contact-btn" style="display: none;">
-              <div style="margin-bottom: 1.5rem;">
-                <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Send Us a Message</h2>
+              <div style="margin-bottom: 1.25rem;">
+                <h2 style="font-size: 1.35rem; margin-bottom: 0.35rem;">Send a Note to [Your Church Name]</h2>
                 <p style="color: var(--color-text-muted); font-size: 0.95rem;">
-                  Have questions about our ministries, membership, planning your first visit, or need assistance? Drop us a note!
+                  Planning your first visit, have a question about service times, or need assistance? Send us a message below.
                 </p>
               </div>
 
@@ -156,28 +150,26 @@
               <form id="contact-form" data-interactive="true">
                 <div class="form-group">
                   <label for="contact-name">Your Full Name *</label>
-                  <input type="text" id="contact-name" name="name" class="form-control" placeholder="John Smith" required>
+                  <input type="text" id="contact-name" name="name" class="form-control" placeholder="Jane Smith" required>
                 </div>
 
                 <div class="form-group">
                   <label for="contact-email">Email Address *</label>
-                  <input type="email" id="contact-email" name="email" class="form-control" placeholder="john@example.com" required>
+                  <input type="email" id="contact-email" name="email" class="form-control" placeholder="jane@example.com" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="contact-phone">Phone Number</label>
-                  <input type="tel" id="contact-phone" name="phone" class="form-control" placeholder="(555) 123-4567">
+                  <label for="contact-phone">Phone Number <span style="font-weight: 400; color: var(--color-text-light);">(Optional)</span></label>
+                  <input type="tel" id="contact-phone" name="phone" class="form-control" placeholder="[(555) 000-0000]">
                 </div>
 
                 <div class="form-group">
-                  <label for="contact-subject">Topic / Purpose of Message *</label>
-                  <select id="contact-subject" name="subject" class="form-control" required>
-                    <option value="planning-visit">I'm Planning My First Visit This Sunday</option>
-                    <option value="general-inquiry">General Question</option>
-                    <option value="kids-youth">Kids &amp; Youth Ministries</option>
-                    <option value="baptism">Water Baptism / Baby Dedication</option>
-                    <option value="small-groups">Joining a Small Group</option>
-                    <option value="facility-rental">Facility or Pastoral Counseling Request</option>
+                  <label for="contact-topic">Reason for Writing *</label>
+                  <select id="contact-topic" name="topic" class="form-control" required>
+                    <option value="planning-visit">I am planning to visit this Sunday</option>
+                    <option value="general-question">General Question</option>
+                    <option value="pastoral-counsel">Pastoral Counseling or Visit</option>
+                    <option value="facility-question">Church Building / Facility Question</option>
                   </select>
                 </div>
 
@@ -193,13 +185,12 @@
             </div>
           </div>
 
-          <!-- Right Column: Info & Directions -->
+          <!-- Right Column: Contact Info & Rural Directions -->
           <div>
-            <!-- Contact Information Card -->
             <div class="contact-info-card">
-              <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Church Office &amp; Facility</h3>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Church Information</h3>
               <p style="color: var(--color-text-muted); font-size: 0.95rem;">
-                Our pastoral and administrative team is available throughout the week to serve you.
+                Feel free to call, email, or stop by on Sunday morning.
               </p>
 
               <ul class="contact-info-list">
@@ -210,8 +201,8 @@
                   <div>
                     <div class="contact-item-title">Physical Address</div>
                     <div class="contact-item-value">
-                      123 Faith Way<br>
-                      Springfield, ST 12345
+                      [123 Church Road]<br>
+                      [Your Town, State 12345]
                     </div>
                   </div>
                 </li>
@@ -221,9 +212,9 @@
                     <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                   </div>
                   <div>
-                    <div class="contact-item-title">Phone</div>
+                    <div class="contact-item-title">Telephone</div>
                     <div class="contact-item-value">
-                      <a href="tel:5551234567">(555) 123-4567</a>
+                      <a href="tel:5550000000">[(555) 000-0000]</a>
                     </div>
                   </div>
                 </li>
@@ -235,7 +226,7 @@
                   <div>
                     <div class="contact-item-title">Email</div>
                     <div class="contact-item-value">
-                      <a href="mailto:info@gracecommunity.example">info@gracecommunity.example</a>
+                      <a href="mailto:info@yourchurchname.org">[info@yourchurchname.org]</a>
                     </div>
                   </div>
                 </li>
@@ -245,25 +236,23 @@
                     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                   </div>
                   <div>
-                    <div class="contact-item-title">Office Hours</div>
+                    <div class="contact-item-title">Pastor Office Hours</div>
                     <div class="contact-item-value">
-                      Monday &ndash; Thursday: 9:00 AM &ndash; 4:00 PM<br>
-                      Friday &ndash; Saturday: Closed (By Appointment)<br>
-                      Sunday Services: 9:00 AM &amp; 10:45 AM
+                      [Tuesday &ndash; Thursday: 9:00 AM &ndash; 1:00 PM]<br>
+                      <small style="color: var(--color-text-light);">Other times available by appointment or home visit.</small>
                     </div>
                   </div>
                 </li>
               </ul>
             </div>
 
-            <!-- Map / Directions Container -->
-            <div class="map-placeholder" id="visit">
-              <svg viewBox="0 0 24 24"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
-              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--color-primary-dark);">Directions &amp; Parking</h3>
-              <p style="font-size: 0.9rem; margin-bottom: 1.25rem;">
-                Conveniently located off Highway 50 at Exit 12. Free visitor parking is located directly in front of the main building with designated spaces for families with infants.
+            <!-- Driving Directions for Rural / Country Setting -->
+            <div class="map-placeholder">
+              <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--color-primary-dark);">Finding Our Church</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--color-text-muted);">
+                [We are located approximately 3 miles east of Town on Church Road, just past the County Line intersection. Gravel parking is available around the church building.]
               </p>
-              <a href="https://maps.google.com/?q=123+Main+Springfield" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+              <a href="https://maps.google.com/?q=Church" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
                 Open in Google Maps &rarr;
               </a>
             </div>
@@ -279,19 +268,20 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <h4>Grace Community Church</h4>
+          <h4>[Your Church Name]</h4>
           <p>
-            A Christ-centered congregation dedicated to proclaiming the Gospel, loving one another, and serving Springfield and beyond.
+            [A brief 1-2 sentence description of your church, e.g.: A caring country fellowship dedicated to the preaching of God's Word and loving our community.]
           </p>
         </div>
 
         <div class="footer-col">
-          <h4>Quick Links</h4>
+          <h4>Pages</h4>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">What We Believe</a></li>
-            <li><a href="events.html">Upcoming Events</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About &amp; Beliefs</a></li>
+            <li><a href="https://www.facebook.com/[YourChurchPage]/videos" target="_blank" rel="noopener">Sermons on Facebook ↗</a></li>
+            <li><a href="events.html">Events &amp; Schedule</a></li>
+            <li><a href="contact.html">Contact &amp; Directions</a></li>
             <li><a href="contact.html#prayer">Prayer Requests</a></li>
           </ul>
         </div>
@@ -299,26 +289,25 @@
         <div class="footer-col">
           <h4>Gathering Times</h4>
           <ul class="footer-service-times">
-            <li><strong>Sunday Worship:</strong> 9:00 AM &amp; 10:45 AM</li>
-            <li><strong>Sunday School:</strong> 9:00 AM</li>
-            <li><strong>Midweek Bible Study:</strong> Wed 6:30 PM</li>
-            <li><strong>Youth Night:</strong> Fri 7:00 PM</li>
+            <li><strong>Sunday School:</strong> [9:30 AM]</li>
+            <li><strong>Sunday Worship:</strong> [10:30 AM]</li>
+            <li><strong>Midweek Prayer:</strong> [Wednesday 6:30 PM]</li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Contact &amp; Location</h4>
+          <h4>Contact Us</h4>
           <p>
-            123 Faith Way<br>
-            Springfield, ST 12345<br>
-            Phone: (555) 123-4567<br>
-            Email: info@gracecommunity.example
+            [123 Church Road]<br>
+            [Your Town, State 12345]<br>
+            Phone: [(555) 000-0000]<br>
+            Email: [info@yourchurchname.org]
           </p>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span id="current-year">2026</span> Grace Community Church. All rights reserved.</p>
+        <p>&copy; <span id="current-year">2026</span> [Your Church Name]. All rights reserved.</p>
         <p>Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a></p>
       </div>
     </div>
